@@ -17,5 +17,20 @@ namespace MythAndLegends.Data.Entity
                               $"Fact: {Fact}");
             base.Tell();
         }
+
+        public override void AddStory()
+        {
+            Console.WriteLine("Enter name of the myth");
+            var name = Console.ReadLine();
+            Console.WriteLine("Enter the story");
+            var storyText = Console.ReadLine();
+            Console.WriteLine("Enter some fact");
+            var fact = Console.ReadLine();
+
+            this.Name = name;
+            this.Fact = fact;
+            this.Content = storyText;
+            
+        }
     }
 }

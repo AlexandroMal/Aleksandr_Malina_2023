@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MythAndLegends.Services.Interface
 {
-    interface IStoryService
+    interface IDisplayerStory
     {
-        public void AddNewStory(Story story);
+        public void DisplayStoryByCode(string code);
         public Story? GetStoryByCode(string code);
     }
 }

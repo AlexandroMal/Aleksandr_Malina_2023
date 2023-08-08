@@ -16,5 +16,7 @@ namespace MythAndLegends.Data.Entity
         {
             Console.WriteLine("------------------------------");
         }
+
+        public abstract void AddStory();
     }
 }

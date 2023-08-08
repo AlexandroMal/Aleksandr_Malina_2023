@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MythAndLegends.Data.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace MythAndLegends.Services.Interface
 {
-    interface IDisplay
+    interface ICreatorStory
     {
-        public void DisplayByCode(string code);
-        public void AddNewStory();
+        public void AddNewStory(Story story);
     }
 }
