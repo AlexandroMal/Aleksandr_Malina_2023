@@ -18,14 +18,6 @@ namespace Task_1.Entity
             Password = password;
         }
 
-        //public string GetNotName()
-        //{
-        //    return Name;
-        //}
-        //public string GetNotNumbers()
-        //{
-        //    return Password;
-        //}
     }
     
 }
