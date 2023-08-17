@@ -1,0 +1,13 @@
+﻿@model WebAuthentication.Models.UserModel
+
+@{
+    ViewData["Title"] = "Status Page";
+}
+
+<div class="Admin-status">
+    @{
+        var admin = Model.admin ? "Admin" : "not Admin";
+        var id = Model.id;
+    }
+    <h2>You are @admin and id:@id</h2>
+</div>
