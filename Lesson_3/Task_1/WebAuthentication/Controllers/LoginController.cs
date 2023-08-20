@@ -14,12 +14,9 @@ namespace WebAuthentication.Controllers
             return View();
         }
 
-        public IActionResult Verify()
+        public IActionResult Verify(string username, string password)
         {
             Users users = new Users();
-
-            var username = Request.Form["username"];
-            var password = Request.Form["password"];
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
